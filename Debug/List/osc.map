@@ -1,0 +1,43 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+buffer                                                                            0x0300    1024
+rx_data                                                                           0x0700       1
+bufer                                                                             0x0701     129
+tx_data0                                                                          0x0782      50
+twi_tx_index                                                                      0x07B4       1
+twi_rx_index                                                                      0x07B5       1
+twi_result                                                                        0x07B6       1
+slave_address                                                                     0x07B7       1
+twi_tx_buffer                                                                     0x07B8       2
+bytes_to_tx                                                                       0x07BA       1
+twi_rx_buffer                                                                     0x07BB       2
+bytes_to_rx                                                                       0x07BD       1
+twi_rx_buffer_size                                                                0x07BE       1
+twi_slave_rx_handler                                                              0x07BF       2
+twi_slave_tx_handler                                                              0x07C1       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R3,R4        2
+a                                                                                 R5,R6        2
+n                                                                                 R7,R8        2
+twi_flag                                                                          GPIOR0.0  1bit
+twi_ready                                                                         GPIOR0.1  1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+read_adc                                                                          0x00247     28
+clearDisplay                                                                      0x00263     18
+display                                                                           0x00275     85
+drawPixel                                                                         0x002CA     67
+main                                                                              0x0030D    319
+twi_master_init                                                                   0x0044C     46
+twi_master_trans                                                                  0x0047A    106
+twi_int_handler                                                                   0x004E4    380
